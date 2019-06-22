@@ -22,7 +22,7 @@ class ImageCard extends Component {
 
 		this.setState({ spans });
 
-		console.log(this.state.spans);
+		console.log(`Image span is: ${this.state.spans}`);
 	};
 
 	render() {
@@ -34,7 +34,7 @@ class ImageCard extends Component {
 					ref={this.imageRef}
 					alt={description}
 					src={urls.regular}
-					// style={{ gridRowEnd: `span ${this.state.spans}` }}
+					style={{ gridRowEnd: `span ${this.state.spans}` }}
 				/>
 			</div>
 		);
